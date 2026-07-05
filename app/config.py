@@ -19,8 +19,7 @@ DATABASE_URL = URL.create(
     port=int(DB_PORT),
     database=DB_NAME,
 )
-print(DATABASE_URL)
-
+# print(DATABASE_URL)
 # DATABASE_URL = (
 #     f"postgresql+psycopg2://"
 #     f"{DB_USER}:{DB_PASSWORD}"

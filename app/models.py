@@ -41,7 +41,7 @@ class Grade(Base):
 
     id = Column(Integer, primary_key=True)
     grade = Column(Integer)
-    date_of = Column(Date)
+    grade_date = Column(Date)
     student_id = Column(Integer,ForeignKey("students.id"))
     subject_id = Column(Integer,ForeignKey("subjects.id"))
     student = relationship("Student", back_populates="grades")
