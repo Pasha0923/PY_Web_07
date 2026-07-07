@@ -10,6 +10,8 @@ class Group(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String(50), nullable=False)
     students = relationship("Student", back_populates="group")
+    def __repr__(self):
+        return f"Group(id={self.id}, name='{self.name}')"
 
 class Student(Base):
     __tablename__ = "students"
